@@ -13,6 +13,7 @@
 \usepackage{subcaption}
 \captionsetup{compatibility=false}
 \setbeamertemplate{caption}[numbered]
+\setbeamercovered{transparent}
 
 \author{Denis Gensh, Marcel Herm, David Krah,\\
 	Eduard Kukuy, Daniel Milbaier, Richard Rudolph}
@@ -84,7 +85,7 @@
 	\frame{\sectionpage}
 	
 	\begin{frame}{Was wir gelernt haben}
-	    \begin{itemize}
+	    \begin{itemize}[<+->]
 	        \item Neue Programmiersprachen
 	        \item Große neue Projekte zu realisieren
 	        \item Zusammenarbeit im Team
@@ -93,7 +94,7 @@
 	\end{frame}
 	
 	\begin{frame}{Feedback zum Wasserfallmodell\\ mit Rückkopplung}
-	    \begin{itemize}
+	    \begin{itemize}[<+->]
 	        \item Gut als erstes großes Projekt
 	        \item Jedoch agile Anpassungen notwendig
 	    \end{itemize}
@@ -105,7 +106,7 @@
 	\frame{\sectionpage}
 	
 	\begin{frame}{Unser Projekt}
-	    \begin{itemize}
+	    \begin{itemize}[<+->]
 	        \item Drag-n-Drop Tool um Workflows aus WPS Tasks zu erstellen
 	        \item Serverseitige Ausführung von Workflows
 	    \end{itemize}
@@ -125,10 +126,22 @@
 	\end{frame}
 	
 	\begin{frame}{Gitstats}
-	    \begin{figure}[ht] 
-					\centering
-					\includegraphics[width=11cm]{images/PSE_Commits.PNG}
-				\end{figure}
+% 	\begin{minipage}[h]{0.1\textwidth}
+% 					\rotatebox{90}{Commits}
+% 					\end{minipage}
+% 					\begin{minipage}[h]{0.9\textwidth}
+% 	    \begin{figure}[ht] 
+% 					\centering
+% 					\includegraphics[width=10cm]{images/PSE_Commits.PNG}
+% 				\end{figure}
+% 				\end{minipage}
+
+                    \centering
+                    \tiny
+ 					\rotatebox{90}{\hspace{0.7cm} Commits}
+ 					\includegraphics[width=10.5cm]{images/PSE_Commits.PNG}
+
+
 	\end{frame}
 	
 	\begin{frame}{Gitstats}
@@ -136,6 +149,7 @@
 					\centering
 					\includegraphics[width=11cm]{images/day_of_week.png}
 				\end{figure}
+					\small\centering Wochentag
 	\end{frame}
 	
 	\begin{frame}{Gitstats}
@@ -143,6 +157,7 @@
 					\centering
 					\includegraphics[width=11cm]{images/hour_of_day.png}
 				\end{figure}
+				\small\centering Stunde am Tag
 	\end{frame}
 	
 	
@@ -157,7 +172,7 @@
 	\end{frame}
 	
 	\begin{frame}{Dokumentation}
-	    \begin{itemize}
+	    \begin{itemize}[<+->]
 	        \item ShareLaTeX
 	        \item samepage.io
 	        \item Epydoc
@@ -173,7 +188,7 @@
 	\end{frame}
 	
 	
-	\begin{frame}{Weitere Gitstats}
+	\begin{frame}{Weitere Gitstats \\\small Anzahl der Commits pro Stunde pro Wochentag}
 	    \begin{figure}[ht] 
 					\centering
 					\includegraphics[width=11cm]{images/hours_of_week.PNG}
